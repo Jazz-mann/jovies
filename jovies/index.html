@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="top">
+        <center><h6>Hot Summer Sale - Save up to 30%</h6></center>
+    </div>
+    
+    <header>
+        <div class="headtxt">
+            <center><h1>Jovies Clothiers</h1></center>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <button onclick="dropdown()" class="navdrop">Store</button>
+            <div class="dropcontent" id="dropcontent">
+                <center><a href="joviesaccesories.html">Jovies Accesories</a><br>
+                <a href="joviesoutfits.html">Jovies Outfits</a></center>
+            </div>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <i onclick="closeNav()" class="fa-solid fa-x"></i> <br>
+            <a href="index.html">Home</a><br>
+            <button onclick="sideDrop()" class="sidedrop">Store</button> <br>
+            <div class="sidedropcontent" id="sidedropcontent">
+                <a href="joviesaccesories.html">Jovies Accesories</a> <br>
+                <a href="joviesoutfits.html">Jovies Outfits</a>
+            </div>
+            <a href="contactus.html">Contact Us</a> 
+        </div>
+
+        <div class="navcontrol">
+            <i onclick="openNav()" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+
+
+    <div id="slider">
+        <figure>
+            <img src="img/jov2.jpg" alt>
+            <img src="img/jov.jpg" alt="">
+            <img src="img/jov3.jpg" alt>
+            <img src="img/jov4.jpg" alt>
+        </figure>
+    </div>
+
+    <div id="slider2">
+        <figure>
+            <img src="img/jov6.jpg" alt>
+            <img src="img/jov7.jpg" alt="">
+            <img src="img/jov8.jpg" alt>
+            <img src="img/jov5.jpg" alt>
+        </figure>
+    </div>
+
+
+
+    <div class="jovies">
+        <p>Matching creativity with productivity here at Jovies Clothiers
+            we take customer satisfaction as our pivotal tool in ensuring
+            we deliver the best. We offer manufacturing in large quantities and 
+            also bespoke too, paying attention to details. </p>
+    </div>
+
+
+
+    <div class="collection">
+        <h4>Our Collection</h4>
+        <div class="lanibubu">
+            <center><h3>Lani Bubu</h3></center>
+        </div>
+        <div class="kharakimono">
+            <center><h3>Khara's Komono</h3></center>
+        </div>
+        <div class="fringe">
+            <center><h3>Lami's Fringe</h3></center>
+        </div>
+        <div class="peaches">
+            <center><h3>Peaches</h3></center>
+        </div>
+    </div>
+
+
+
+    <div class="consult">
+        <center>
+            WANT TO ORDER BULK OR NEED A BESPOKE DRESS? <br>
+            <button onclick="consult()">CONSULT NOW </button>
+        </center>
+    </div>
+
+
+
+    <div class="listings">
+        <h4>LISTING</h4> 
+        <div class="listgoods">
+            <div class="listshow">
+                <img src="img/acc1.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/acc2.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/bubu4.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/acc3.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/jc4.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/acc9.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/acc7.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/acc8.jpg" alt="">
+            </div>
+            <div class="listshow">
+                <img src="img/bubu1.jpg" alt="">
+            </div>
+        </div>
+        <a href="">See All</a>
+    </div>
+
+
+
+    <div class="reviews">
+        <div id="text-slider">
+            <ul>
+                <li>
+                <div class="text-slider-container">
+                    <center>
+                        <h4>Quality Bag</h4>
+                        <p>“The tote bag was nice and of good quality. I definitely prescribe jovies.”</p>
+                        <h5>- Susan</h5>
+                    </center>
+                </div>
+                </li>
+                 <li>
+                <div class="text-slider-container">
+                    <center>
+                        <h4>Nice Dress</h4>
+                        <p>“So I decided to try out jovies with a outifit idea and she nailed it. Shout out to jovies.”</p>
+                        <h5>- Amy</h5>
+                    </center>
+                </div>
+                </li>                
+                <li>
+                    <div class="text-slider-container">
+                        <center>
+                            <h4>Amazed by the fast, accurate workmanship</h4>
+                            <p>“I received my dress this week and they are fantastic. Thanks so much for your work on perfecting them!”</p>
+                            <h5>- Tina</h5>
+                        </center>
+                    </div>
+                </li>     
+                <li>
+                    <div class="text-slider-container">
+                        <center>
+                            <h4>My dress is fantastic</h4>
+                            <p>“I received the dress this week and they are fantastic. Thanks so much for your work on perfecting them!”</p>
+                            <h5>- Amanda</h5>
+                        </center>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </div>
+
+
+
+    <div class="qualities">
+        <img src="img/jcc1.PNG" alt="">
+        <img src="img/sale.png" alt="">
+        <img src="img/fr.jpg" alt="">
+        <img src="img/fd.png" alt="">
+    </div>
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="footinfo">
+                <h2>Jovies Clothiers</h2>
+                <i class="fa-solid fa-phone"></i> &nbsp; 07033845567 <br>
+                <i class="fa-solid fa-envelope-circle-check"></i> &nbsp; joviesclothiers@gmail.com
+            </div>
+            <div class="footlinks">
+                <a href="joviesaccesories.html">Accesories</a>  <br>
+                <a href="joviesoutfits.html">Outfits</a> <br>
+                <a href="terms&condition.html">T&C</a>  <br>
+                <a href="returnandrefund.html">Return and Refund</a>
+            </div>
+        </div>
+        <div class="footright">
+            <div class="socials">
+                <a href="https://m.facebook.com/profile.php?id=100054346309769"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/joviesclothiers?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=2348187137799&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="newsletter">
+                <div id="subsuccess" class="subsuccess">
+                    <h3>Subscribed Successfully!</h3>
+                </div>
+                <h4>subscribe to newsletter</h4> <br>
+
+                <input id="email" class="email" type="text">
+                <input onclick="submit()" class="submit" type="button" value="Subscribe">
+
+            </div>
+        </div>
+        <div class="outro">
+            2023 &copy; joviesclothiers
+        </div>
+    </footer>
+
+</body>
+
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+
+</html>

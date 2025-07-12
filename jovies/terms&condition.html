@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="top">
+        <center><h4>Hot Summer Sale - Save up to 50%</h4></center>
+    </div>
+    <header>
+        <div class="headtxt">
+            <center><h1>Jovies Clothiers</h1></center>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <button onclick="dropdown()" class="navdrop">Store</button>
+            <div class="dropcontent" id="dropcontent">
+                <center><a href="joviesaccesories.html">Jovies Accesories</a><br>
+                <a href="joviesoutfits.html">Jovies Outfits</a></center>
+            </div>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <i onclick="closeNav()" class="fa-solid fa-x"></i> <br>
+            <a href="index.html">Home</a><br>
+            <button onclick="sideDrop()" class="sidedrop">Store</button> <br>
+            <div class="sidedropcontent" id="sidedropcontent">
+                <a href="joviesaccesories.html">Jovies Accesories</a>
+                <a href="joviesoutfits.html">Jovies Outfits</a>
+            </div>
+            <a href="contactus.html">Contact Us</a> 
+        </div>
+
+        <div class="navcontrol">
+            <i onclick="openNav()" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+
+    <div class="image-slider">
+        <img src="img/jc2.jpg" alt="">
+    </div>
+    
+
+
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="footinfo">
+                <h2>Jovies Clothiers</h2>
+                <i class="fa-solid fa-phone"></i> &nbsp; 07033845567 <br>
+                <i class="fa-solid fa-envelope-circle-check"></i> &nbsp; joviesclothiers@gmail.com
+            </div>
+            <div class="footlinks">
+                <a href="joviesaccesories.html">Accesories</a>  <br>
+                <a href="joviesoutfits.html">Outfits</a> <br>
+                <a href="terms&condition.html">T&C</a>  <br>
+                <a href="returnandrefund.html">Return and Refund</a>
+            </div>
+        </div>
+        <div class="footright">
+            <div class="socials">
+                <a href="https://m.facebook.com/profile.php?id=100054346309769"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/joviesclothiers?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=2348187137799&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="newsletter">
+                <div id="subsuccess" class="subsuccess">
+                    <h3>Subscribed Successfully!</h3>
+                </div>
+                <h4>subscribe to newsletter</h4> <br>
+
+                <input id="email" class="email" type="text">
+                <input onclick="submit()" class="submit" type="button" value="Subscribe">
+
+            </div>
+        </div>
+        <div class="outro">
+            2023 &copy; joviesclothiers.shop
+        </div>
+    </footer>
+
+</body>
+
+    <script src="main.js"></script>
+
+</html>

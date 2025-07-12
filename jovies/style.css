@@ -1,0 +1,766 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Antic Slab';
+}
+a{
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+}
+.fa-facebook{
+    color: #4267B2;
+}
+.fa-instagram{
+    color: #C13584;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+.fa-tiktok{
+    color: #FE2C55;
+}
+.fa-envelope-circle-check{
+    color: grey;
+}
+.fa-phone{
+    color: grey;
+}
+
+
+
+.top{
+    line-height: 30px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+header{
+    height: 210px;
+    background-image: linear-gradient(to right,#fcfafb, #c8d3d6);
+    width: 100%;
+}
+.headtxt{
+    height: 180px;
+    font-size: 40px;
+    font-family: 'Alex Brush';
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    width: 40%;
+    line-height: 30px;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    background-color: black;
+    justify-content: space-around;
+    border-radius: 7px 7px 0px 0px;
+}
+.navbar a{
+    color: white;
+}
+.navdrop{
+    border: none;
+    color: white;
+    outline: none;
+    background-color: black;
+    font-family: inherit;
+    font-size: inherit;
+}
+.navbar a:hover{
+    color: grey;
+}
+.navdrop:hover{
+    color: grey;
+}
+
+.dropcontent{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    line-height: 40px;
+    width: 180px;
+    top: 240px;
+    background-color: rgba(0, 0, 0, 0.888);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropcontent a{
+    color: rgb(151, 149, 149);
+}
+.dropcontent a:hover{
+    color: white;
+}
+
+
+.sidebar{
+    height: 100%;
+    line-height: 60px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    overflow: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.sidebar a, button{
+    color: white;
+    margin-left: 15px;
+}
+.sidebar i{
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+.sidedrop{
+    border: none;
+    color: white;
+    outline: none;
+    background-color: black;
+    font-family: inherit;
+    font-size: inherit;
+}
+.sidedropcontent{
+    display: none;
+    height: 120px;
+    width: 100%;
+    transition: 0.5s;
+    background-color: gray;
+}
+
+
+
+.navcontrol{
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 40px;
+    right: 6px;
+    padding-left: 7.5px;
+    padding-top: 3.9px;
+    font-size: 25px;
+    color: black;
+    background-color: inherit;
+}
+
+
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+    
+
+    div#slider { overflow: hidden;}
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      height: 100%;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+}
+
+div#slider2 { overflow: hidden; display: none;}
+    div#slider2 figure img { width: 20%; float: left; }
+    div#slider2 figure { 
+      position: relative;
+      height: 100%;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+}
+
+    
+
+
+
+.jovies{
+    min-height: 250px;
+    width: 80%;
+    line-height: 25px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.jovies p{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.collection{
+    height: 800px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.collection h4{
+    position: absolute;
+    height: 5%;
+    left: 10%;
+    top: -5%;
+    font-size: 20px;
+}
+.lanibubu{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 0%;
+    top: 8%;
+    line-height: 350px;
+    cursor: pointer;
+    background-image: url(img/bubu1.jpg);
+    background-size: cover; 
+    border-radius: 10px 0px 0px 10px;
+}
+.lanibubu:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+.kharakimono{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: 0%;
+    top: 8%;
+    line-height: 350px;
+    cursor: pointer;
+    background-image: url(img/bubu2.jpg);
+    background-size: 100% 100%; 
+    border-radius: 0px 10px 10px 0px;
+}
+.kharakimono:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+.fringe{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 0%;
+    bottom: 2%;
+    line-height: 350px;
+    cursor: pointer;
+    background-image: url(img/jc4.jpg);
+    background-size: cover; 
+    border-radius: 10px 0px 0px 10px;
+}
+.fringe:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+.peaches{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: 0%;
+    bottom: 2%;
+    line-height: 350px;
+    cursor: pointer;
+    background-image: url(img/bubu1.jpg);
+    background-size: cover; 
+    border-radius: 0px 10px 10px 0px;
+}
+.peaches:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+
+
+
+
+
+.consult{
+    height: 200px;
+    font-size: 16px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.consult button{
+    width: 30%;
+    height: 50px;
+    color: white;
+    background-color: #142a1c;
+    border-radius: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+
+
+.listings{
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+  font-family: 'Work sans', sans-serif;
+  font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.listings a{
+    font-size: 12px;
+    color: #4267B2;
+    text-decoration: underline;
+    float: right;
+}
+.listgoods{
+    height: 350px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+.listgoods::-webkit-scrollbar {
+    display: none;
+}
+.listgoods {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+.listshow{
+    height: 250px;
+    width: 180px;
+    margin-top: 50px;
+    margin-right: 40px;
+    display: inline-block;
+}
+.listshow:hover{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+.listshow img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 15px 0 15px;
+}
+
+
+
+.reviews{
+    height: 300px;
+    padding-top: 50px;
+}
+#text-slider, ul{
+    height: 200px;
+}
+#text-slider{
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	max-width: 600px;
+}
+#text-slider li{
+	float: left;
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	height: 200px;
+}
+#text-slider ul{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .3s linear;
+	-moz-transition: left .3s linear;
+	-o-transition: left .3s linear;
+	-webkit-transition: left .3s linear;
+	margin-left: -25px;
+     font-family: century gothic;
+     color: #666;
+}
+.text-slider-container{
+	margin: 0 auto;
+	padding: 30px;
+	width: 550px;
+  min-height: 180px;
+}
+.text-slider-container h4{
+  font-family: 'Work sans', sans-serif;
+ 	color: #000;
+  font-weight:400;
+  font-size: 20px;
+}
+.text-slider-container h5 {
+	font-weight:normal;
+	font-family: 'Questrial', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+  color:#EE2D24;
+}
+.text-slider-container  p{
+    text-indent: 40px;
+	font-family: 'Questrial', sans-serif;
+	font-size: 15px;
+	color: #434343;
+	line-height: 200%;
+	margin:0 auto 0 auto;
+	margin: 10px 25px;
+}
+@-webkit-keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#text-slider ul
+{
+         animation: slide-animation 25s infinite;
+	-webkit-animation: slide-animation 25s infinite;
+}
+/* use to pause the content on mouse over */
+#text-slider ul:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+
+
+
+
+
+.qualities{
+    height: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.qualities img{
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+
+
+footer{
+    height: 350px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+.foot{
+    height: 90%;
+    width: 50%;
+    float: left;
+}
+.footinfo{
+    height: 100%;
+    width: 60%;
+    line-height: 35px;
+    padding-left: 25px;
+    padding-top: 20%;
+    float: left;
+}
+.footlinks{
+    height: 100%;
+    width: 30%;
+    line-height: 50px;
+    padding-top: 40px;
+    float: right;
+}
+.footlinks a{
+    color: grey;
+    margin-bottom: 15px;
+}
+.footlinks a:hover{
+    color: white;
+}
+
+.footright{
+    height: 90%;
+    width: 50%;
+    float: right;
+}
+.socials{
+    height: 50%;
+    width: 100%;
+    font-size: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.newsletter{
+    height: 50%;
+    width: 100%;
+    padding-left: 20%;
+}
+.subsuccess{
+    display: none;
+    z-index: 5;
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #25D366;
+    align-items: center;
+    justify-content: center;
+}
+.email{
+    width: 55%;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    padding-left: 5px;
+}
+.emailer{
+    width: 55%;
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    border: 2px solid red;
+}
+.submit{
+    width: 25%;
+    height: 30px;
+}
+
+.outro{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reachus{
+    height: 600px;
+    padding-top: 100px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    header{
+        height: 200px;
+    }
+    .headtxt{
+        height: 200px;
+        font-size: 30px;
+    }
+    .navbar{
+        display: none;
+    }
+    .navcontrol{
+        display: flex;
+    }
+    #slider{
+        display: none;
+    }
+
+    div#slider2{
+        display: block;
+        height: 700px;
+    }
+    #slider2 figure img{
+        height: 700px;
+    }
+
+
+
+
+    .collection{
+        height: 1650px;
+    }
+    .collection h4{
+        top: -1%;
+    }
+    .lanibubu{
+        top: 4%;
+        height: 370px;
+        width: 250px;
+        left: 16%;
+    }
+    .kharakimono{
+        top: 28.5%;
+        height: 370px;
+        width: 250px;
+        left: 26%;
+    }
+    .fringe{
+        bottom: 24.5%;
+        height: 370px;
+        width: 250px;
+        left: 16%;
+    }
+    .peaches{
+        height: 370px;
+        width: 250px;
+        left: 26%;
+        bottom: 0px;
+    }
+
+
+    .text-slider-container{
+        padding: 10px;
+        padding-right: 20%;
+    }
+
+
+    .qualities{
+        height: 150px;
+    }
+
+
+
+
+
+    footer{
+        height: 800px;
+    }
+    .foot{
+        width: 100%;
+        height: 60%;
+    }
+    .footinfo{
+        width: 100%;
+        height: 40%;
+        line-height: 50px;
+        padding-top: 50px;
+        padding-left: 15%;
+    }
+    .footlinks{
+        width: 100%;
+        height: 60%;
+        padding-left: 35%;
+    }
+    .footright{
+        width: 100%;
+        height: 30%;
+    }
+}
+
+
+@media screen and (min-width: 1100px){
+    header{
+        height: 240px;
+    }
+    .headtxt{
+        height: 200px;
+    }
+    .navbar{
+        line-height: 40px;
+    }
+    .dropcontent{
+        top: 270px;
+        width: 250px;
+    }
+
+    #slider{
+        height: 800px;
+    }
+
+
+    .jovies{
+        width: 60%;
+    }
+
+    .collection{
+        height: 500px;
+        max-width: 80%;
+    }
+    .lanibubu{
+        top: 15%;
+        left: 4%;
+    }
+    .kharakimono{
+        top: 15%;
+        left: 28%;
+    }
+    .fringe{
+        top: 15%;
+        left: 52%;
+    }
+    .peaches{
+        top: 15%;
+        right: 4%;
+    }
+
+
+    .qualities{
+        width: 65%;
+        margin: 0 auto;
+    }
+
+
+    .consult button{
+        width: 18%;
+    }
+
+
+    .footinfo{
+        padding-left: 80px;
+        padding-top: 10%;
+    }
+    .email{
+        margin-right: 15px;
+    }
+}

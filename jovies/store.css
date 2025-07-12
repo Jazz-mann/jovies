@@ -1,0 +1,98 @@
+.accesories, .itemhead{
+    height: 300px;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.accitems{
+    min-height: 800px;
+}
+
+.items{
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.item{
+    width: 220px;
+    height: 100%;
+}
+.item img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 15px 0 15px;
+}
+
+.review{
+    min-height: 200px;
+    padding-left: 50px;
+    margin-bottom: 100px;
+}
+
+.rev{
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.leave{
+    margin-top: 80px;
+    font-size: 15px;
+}
+.leave a{
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+.fit{
+    height: 300px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.more{
+    height: 250px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .items{
+        height: 1200px;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .item{
+        margin-bottom: 50px;
+    }
+    .review{
+        margin-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .accesories{
+        padding-left: 150px;
+    }
+    .fit{
+        padding-left: 150px;
+    }
+    .items{
+        width: 80%;
+        margin-bottom: 150px;
+    }
+    .review{
+        padding-left: 100px;
+    }
+}
